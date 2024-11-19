@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const startBtn = document.querySelector("button");
-    const scoreDisplay = document.querySelector(".score-display");
+    const scoreDisplay = document.querySelector(".results-display");
     const linesDisplay = document.querySelector(".lines-display");
     const grid = document.querySelector(".grid");
     const displaySquares = document.querySelectorAll(".upcoming-grid div");
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Game Over
     function gameOver() {
         if (current.some(index => squares[currentPosition + index].classList.contains("block2"))) {
-            scoreDisplay.innerHTML = `GAME OVER --- Final Score: ${score}`;
+            scoreDisplay.innerHTML = `GAME OVER\nFinal Score: ${score}`;
             clearInterval(timerId);
             document.removeEventListener("keydown", control);
         }

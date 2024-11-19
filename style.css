@@ -1,3 +1,24 @@
+html {
+    max-width: 500px;
+    margin: auto;
+}
+
+body {
+    background-color: #31403d;
+    color: ghostwhite;
+    width: 417px;
+    justify-self: center;
+    font-family: cursive; 
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 200px;
+
+}
+
 div {
     background-color: yellow;
     height: 20px;
@@ -6,14 +27,34 @@ div {
 
 h1 {
     font-size: 2rem;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 0;
 }
 
 h2 {
     font-size: 1rem;
 }
 
+p {
+    text-align: center;
+    font-size: 0.6em;
+    width: 200px;
+    margin-bottom: 2em;
+}
+
+a {
+    color: yellow;
+}
+
 button {
-    margin: 10px 0;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 200px;
+    background-color: blue;
+    color: ghostwhite;
+    font-weight: bold;
+    border: 2px yellow solid;
 }
 
 .grid {
@@ -25,6 +66,7 @@ button {
 }
 
 .upcoming-grid {
+    background-color: blue;
     height: 80px;
     width: 80px;
     display: flex;
